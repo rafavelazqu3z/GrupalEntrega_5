@@ -1,3 +1,32 @@
-.texto1, .texto2, .texto3{
-    column-count: 3;
+@media (max-width: 1200px){
+    
+    .texto1, .texto2, .texto3{
+        column-count: 3;
+    }
+    
+
+    .contenedor1{
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .texto1, .texto2, .texto3{
+        column-count: 2;
+    }
+
+    #opciones{
+        display: block;
+    }
+}
+
+@media (max-width: 576px){
+    .texto1, .texto2, .texto3{
+        column-count: 1;
+    }
+
+    .textoLista{
+        padding: 0;
+    }
 }

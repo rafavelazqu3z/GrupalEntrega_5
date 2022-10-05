@@ -8,25 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LOREM</title>
   </head>
-  <script>
-    function mostrarOpciones(){
-        document.getElementById('opciones').classList.remove("d-none","col-2")
-        document.getElementById('opciones').classList.add("text-center")
-        document.getElementById('contenedor').classList.remove("d-flex")
-    }
-  </script>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
         <div class="container">
+          <a class="nav-link text-white fs-5">LOREM IPSUM</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav w-100 justify-content-between">
-              <li class="nav-item">
-                <a class="nav-link text-white fs-5">LOREM IPSUM</a>
-              </li>
               <li class="nav-item">
                 <form class="form-inline mx-0 my-lg-1 d-md-none mx-3">
                     <input class="form-control" type="search" placeholder="Search" aria-label="Search"/>
@@ -42,7 +34,28 @@
                 <a class="nav-link text-white-50">Amet</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white-50 d-md-none" onclick="mostrarOpciones()">Opciones</a>
+                  <p class="nav-link d-md-none text-white-50" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Opciones
+                  </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="col-2" id="opciones" style="height: 236px;">
+                      <button type="button" style="border: 1px solid lightgrey; width: 240px; text-align: left; background-color: white;"  class="btn btn-default p-3" >
+                        Option 1
+                      </button>
+                      <br />
+                      <button  type="button"  style="border: 1px solid lightgrey; width: 240px; text-align: left; background-color: white;"  class="btn btn-default p-3" >
+                        Option 2
+                      </button>
+                      <br />
+                      <button type="button"  style="border: 1px solid lightgrey; width: 240px; text-align: left; background-color: white;"  class="btn btn-default p-3"  >
+                        Option 3
+                      </button>
+                      <br />
+                      <button type="button" style="border: 1px solid lightgrey; width: 240px; text-align: left; background-color: white;" class="btn btn-default p-3">
+                        Option 4
+                      </button>
+                    </div>
+                  </div>
               </li>
              </ul>
              <form class="form-inline mx-0 my-lg-1 d-none d-md-block mx-3">
@@ -78,8 +91,8 @@
         </div>
       </div>
     </center>
-    <div class="container d-flex mt-4 mx-auto" id="contenedor">
-      <div class="col-2 d-none d-md-block" id="opciones" style="height: 236px;">
+    <div class="container d-flex mt-4 mx-auto contenedor1" id="contenedor">
+      <div class="col-3 d-none d-md-block" id="opciones" style="height: 236px;">
         <button type="button" style="border: 1px solid lightgrey; width: 240px; text-align: left"  class="btn btn-default p-3" >
           Option 1
         </button>
@@ -96,7 +109,7 @@
           Option 4
         </button>
       </div>
-      <ul style="list-style: none;">
+      <ul class="textoLista" style="list-style: none;">
         <li class=" mx-5" style="text-align: justify; background-color: #f8f9fa" >
           <div>
             <p class="texto1">
