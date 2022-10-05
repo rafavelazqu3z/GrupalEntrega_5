@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOREM</title>
+  </head>
+  <script>
+    function mostrarOpciones(){
+        document.getElementById('opciones').classList.remove("d-none","col-2")
+        document.getElementById('opciones').classList.add("text-center")
+        document.getElementById('contenedor').classList.remove("d-flex")
+    }
+  </script>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100 justify-content-between">
+              <li class="nav-item">
+                <a class="nav-link text-white fs-5">LOREM IPSUM</a>
+              </li>
+              <li class="nav-item">
+                <form class="form-inline mx-0 my-lg-1 d-md-none mx-3">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search"/>
+                 </form>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white">Dolor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50">Sit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50">Amet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50 d-md-none" onclick="mostrarOpciones()">Opciones</a>
+              </li>
+             </ul>
+             <form class="form-inline mx-0 my-lg-1 d-none d-md-block mx-3">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search"/>
+             </form>
+            </div>
+         </div>
+    </nav>
+    <center>
+      <h2 class="d-none d-md-block" style="margin-top: 30px">Lorem ipsum...</h2>
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide d-none d-md-block"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Reprehenderit soluta nemo impedit dicta error reiciendis, sit modi
+              ex unde sunt?
+            </p>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+              exercitationem.
+            </p>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+    </center>
+    <div class="container d-flex mt-4 mx-auto" id="contenedor">
+      <div class="col-2 d-none d-md-block" id="opciones" style="height: 236px;">
+        <button type="button" style="border: 1px solid lightgrey; width: 240px; text-align: left"  class="btn btn-default p-3" >
+          Option 1
+        </button>
+        <br />
+        <button  type="button"  style="border: 1px solid lightgrey; width: 240px; text-align: left"  class="btn btn-default p-3" >
+          Option 2
+        </button>
+        <br />
+        <button type="button"  style="border: 1px solid lightgrey; width: 240px; text-align: left"  class="btn btn-default p-3"  >
+          Option 3
+        </button>
+        <br />
+        <button type="button" style="border: 1px solid lightgrey; width: 240px; text-align: left" class="btn btn-default p-3">
+          Option 4
+        </button>
+      </div>
+      <ul style="list-style: none;">
+        <li class=" mx-5" style="text-align: justify; background-color: #f8f9fa" >
+          <div>
+            <p class="texto1">
+              We’re steadily making progress on server issues and stability, as
+              well as working through a second DDoS attack. We’re all hands on
+              deck and will continue to work throughout the night. Thank you for
+              your patience - we’ll share more info as it becomes available.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Provident atque iste reprehenderit debitis magni rerum voluptates
+              ipsam illum! Quas perferendis officia atque obcaecati, itaque
+              deserunt nulla ratione eum laudantium tempora?
+            </p>
+          </div>
+        </li>
+        <li class=" mx-5" style="text-align: justify; background-color: #f8f9fa">
+          <div>
+            <p class="texto2">
+              We’re steadily making progress on server issues and stability, as
+              well as working through a second DDoS attack. We’re all hands on
+              deck and will continue to work throughout the night. Thank you for
+              your patience - we’ll share more info as it becomes available.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              laboriosam unde iste fuga architecto nisi! Placeat quae
+              perferendis quas quia esse mollitia eos quos, fugiat incidunt
+              exercitationem accusantium quibusdam inventore.
+            </p>
+          </div>
+        </li>
+        <li class=" mx-5" style="text-align: justify; background-color: #f8f9fa">
+            <p class="texto3">
+              We’re steadily making progress on server issues and stability, as
+              well as working through a second DDoS attack. We’re all hands on
+              deck and will continue to work throughout the night. Thank you for
+              your patience - we’ll share more info as it becomes available.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+              explicabo nihil in, unde aperiam dolorem repellendus, odio rem
+              blanditiis dicta doloremque consectetur sapiente doloribus minus
+              corporis illum ut nostrum laboriosam!
+            </p>
+        </li>
+      </ul>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
